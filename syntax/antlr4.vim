@@ -31,8 +31,8 @@ syn match antlrBlock "[{}]"
 syn region antlrAction matchgroup=antlrBlock start="{" end="}" contains=antlrVariable,antlrAction
 syn match antlrVariable contained "$[a-zA-Z][a-zA-Z_0-9]*"
 
-syn include @JAVA syntax/java.vim
-syn region ANTLR4EmbeddedJavaAction matchgroup=antlrBlock start="{" end="}" contains=@JAVA,antlrVariable containedin=antlrAction
+syn include @PYTHON syntax/python.vim
+syn region ANTLR4EmbeddedJavaAction matchgroup=antlrBlock start="{" end="}" contains=@PYTHON,antlrVariable containedin=antlrAction
 
 syn keyword antlrOperations pushMode popMode skip channel
 
